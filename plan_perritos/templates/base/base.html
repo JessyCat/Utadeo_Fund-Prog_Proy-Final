@@ -6,13 +6,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
-
     <title>{% block title %}Inicio{% endblock %}</title>
 
 </head>
 
 <body>
-{% block content %}
+{% block header %}
 <header>
 <!-- Navigation -->
 <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-info fixed-top">
@@ -71,6 +70,9 @@
     </div>
 </nav>
 </header>
+{% endblock %}
+
+{% block content %}
 <main role="main">
     <div id="Carrusel" class="carousel slide" data-ride="carousel" style="margin-top: 50px;">
         <ol class="carousel-indicators">
@@ -99,8 +101,46 @@
         </a>
     </div>
 </main>
+<div class="container">
+    <div class="row text-center">
+        <div class="col-lg-4 col-md-6 mb-4 mt-4">
+            <div class="card">
+                <img class="card-img-top" src="http://placehold.it/500x325" alt="Noticia 1">
+                <div class="card-body">
+                    <h4 class="card-title">Noticia 1</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse
+                        necessitatibus neque.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 mt-4">
+            <div class="card">
+                <img class="card-img-top" src="http://placehold.it/500x325" alt="Noticia 1">
+                <div class="card-body">
+                    <h4 class="card-title">Evento 1</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse
+                        necessitatibus neque.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 mt-4">
+            <div class="card">
+                <a href="#">
+                    <img class="card-img-top" src="http://placehold.it/500x325" alt="Campaña 1">
+                </a>
+                <div class="card-body">
+                    <h4 class="card-title">Campaña 1</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse
+                        necessitatibus neque.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
+{% endblock %}
 
+{% block footer %}
 <footer class="py-5 bg-info">
     <div class="text-center">
         <ul>
