@@ -1,0 +1,148 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face {
+    font-family: 'Noteworthy';
+    src: url('fonts/Noteworthy-Lt.ttf');
+    src: url('fonts/Noteworthy-Lt.ttf') format('ttf'), url('fonts/Noteworthy.ttf') format('truetype'), url('fonts/Noteworthy.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  
+}
+
+@font-face {
+    font-family: 'Futura Light BT';
+    src: url('fonts/Futura Light BT.ttf');
+    src: url('fonts/Futura Light BT.ttf') format('ttf'), url('fonts/Futura Light BT.ttf') format('truetype'), url('fonts/Futura Light BT.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  
+}
+
+
+.contenido {padding:0.9375em;}
+
+#logo img {margin-top:45px;}
+
+.bg-dark {
+  background-color: #ffff!important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #21A3A3;
+  font-family:"Noteworthy";
+}
+
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+  color: #007878;
+  border-bottom: #A8C030 medium solid;
+  font-family:"Noteworthy";
+}
+.card-img-top {
+width:50%;
+}
+
+.navbar-toggler {
+ 
+  background-color: #21A3A3;
+
+  
+  
+}
+
+.dropdown-menu {
+  
+  background-color: #A8C030;
+ 
+}
+
+.dropdown-item {
+  
+  color: #FFFFFF;
+  background-color: #A8C030;
+  border-bottom: #A8C030 medium solid;
+  font-family:"Noteworthy";
+}
+
+.card {
+	border:none;
+}
+
+.card-body {
+  text-align:left;
+  padding-top: 1.25rem;
+}
+
+.card .card-img-top {
+text-align:left;
+width:100%;
+}
+h4, h3, h2{
+font-family:"Noteworthy";
+color: #103332;
+}
+
+p {
+font-family:Arial, Helvetica, sans-serif;
+color: #007878;
+}
+
+.bg-info {
+background-color:#007878 !important;	
+}
+
+.bg-info p {
+color:#F0F0D8;	
+font-family:"Noteworthy";
+}
+
+.card-footer {
+  background-color:#FFF;
+  border-top:none;
+  padding: 0.75rem 0rem;
+}
+
+.btn {
+border-radius: 0px;
+}
+
+.btn-primary {
+  color: #103332;
+  background-color: #FFF;
+  border-color: #A8C030;
+  padding:0.5rem 3.5rem;
+  font-family:"Noteworthy";
+}
+.btn-primary:hover {
+   color: #103332;
+  background-color: #A8C030;
+  border-color: #A8C030;
+}
+
+
+}
+/* MEDIA QUERIES */
+@media only screen and (min-width: 64.063em) {
+.h-25 {
+  height: 50% !important;
+}
+
+}
+
+/* TAMAÑO TABLET */
+@media only screen and (min-width: 40.063em) {
+.h-25 {
+  height: 50% !important;
+}
+
+}
+
+/* TAMAÑO PHONE */
+@media only screen and (max-width: 40em) {
+
+.h-25 {
+  height: 25% !important;
+}
+
+
+
+}
